@@ -36,6 +36,7 @@ library
   exposed-modules:
       Advent2021.Day01
   other-modules:
+      Helpers
       Paths_advent
   ghc-options:        -Wall
                       -Wcompat
