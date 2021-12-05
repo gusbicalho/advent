@@ -1,8 +1,9 @@
+{-# LANGUAGE ImportQualifiedPost #-}
 {-# LANGUAGE PatternGuards #-}
 
 module Main where
 
-import Advent2021.Day01
+import Advent2021.Day01 qualified
 import System.Environment (getArgs)
 import Text.Read (readMaybe)
 
@@ -23,8 +24,8 @@ unimplemented year day = putStrLn $ "Unimplemented " <> show year <> " " <> show
 
 getYearDay :: [String] -> Maybe (Word, Word)
 getYearDay args
-  | (yearStr : dayStr : _) <- args,
-    Just year <- readMaybe yearStr,
-    Just day <- readMaybe dayStr =
+  | (yearStr : dayStr : _) <- args
+    , Just year <- readMaybe yearStr
+    , Just day <- readMaybe dayStr =
     Just (year, day)
   | otherwise = Nothing
