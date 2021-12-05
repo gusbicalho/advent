@@ -4,7 +4,7 @@ import Helpers qualified
 
 run :: IO ()
 run = do
-  input <- getInput
+  input <- Helpers.readInputLines "inputs/2021/day01.txt"
   putStrLn "Part 1:"
   putStrLn $ "Example: " <> show (countIncrements example)
   putStrLn $ "Final: " <> show (countIncrements input)
@@ -39,6 +39,3 @@ example =
   , 260
   , 263
   ]
-
-getInput :: IO [Word]
-getInput = Helpers.readInputLines "inputs/2021/day01.txt"

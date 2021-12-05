@@ -4,6 +4,7 @@
 module Main where
 
 import Advent2021.Day01 qualified
+import Advent2021.Day02 qualified
 import System.Environment (getArgs)
 import Text.Read (readMaybe)
 
@@ -14,6 +15,7 @@ main = do
     Nothing -> usage
     Just yearDay -> case yearDay of
       (2021, 1) -> Advent2021.Day01.run
+      (2021, 2) -> Advent2021.Day02.run
       (year, day) -> unimplemented year day
 
 usage :: IO ()

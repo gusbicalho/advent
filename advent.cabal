@@ -35,6 +35,7 @@ library
     , generic-data
   exposed-modules:
       Advent2021.Day01
+      Advent2021.Day02
   other-modules:
       Helpers
       Paths_advent
