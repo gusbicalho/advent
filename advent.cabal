@@ -1,5 +1,5 @@
 cabal-version:      3.4
-name:               advent2021
+name:               advent
 version:            0.1.0.0
 
 -- A short (one-line) description of the package.
@@ -16,9 +16,9 @@ version:            0.1.0.0
 author:             Gustavo Bicalho
 maintainer:         gusbicalho@gmail.com
 
-executable advent2021-exe
+executable advent-exe
     main-is:          Main.hs
-    build-depends:    base, advent2021
+    build-depends:    base, advent
     hs-source-dirs:   app
     default-language: Haskell2010
 
@@ -36,7 +36,7 @@ library
   exposed-modules:
       Advent2021.Day01
   other-modules:
-      Paths_advent2021
+      Paths_advent
   ghc-options:        -Wall
                       -Wcompat
                       -Widentities
