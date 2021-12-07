@@ -5,6 +5,7 @@ module Main where
 
 import Advent2021.Day01 qualified
 import Advent2021.Day02 qualified
+import Advent2021.Day03 qualified
 import System.Environment (getArgs)
 import Text.Read (readMaybe)
 
@@ -16,6 +17,7 @@ main = do
     Just yearDay -> case yearDay of
       (2021, 1) -> Advent2021.Day01.run
       (2021, 2) -> Advent2021.Day02.run
+      (2021, 3) -> Advent2021.Day03.run
       (year, day) -> unimplemented year day
 
 usage :: IO ()
